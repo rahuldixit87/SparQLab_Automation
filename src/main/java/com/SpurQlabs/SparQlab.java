@@ -52,7 +52,7 @@ public void addition () {
 	        String ans = "111111";
 		   System.out.println("addition  "+numAns);
 		   
-		  // Assert.assertEquals(ans,numAns);
+		  
 	
           } 
           catch (Exception e )
@@ -87,7 +87,7 @@ public void substraction () {
 	
 
 	   System.out.println("substraction    "+ansewr.getText());
-	  // Assert.assertEquals(ansewr.getText(), 111111);
+	  
 
     } 
     catch (Exception e )
