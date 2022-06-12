@@ -6,8 +6,9 @@
       <class name="com.apllicationTest.Applicatin_test">
         <methods>
           <include name="LaunchBrowser"/>
+          <include name="multiplicationTest"/>
+          <include name="substractionTest"/>
           <include name="closeBrowser"/>
-          <include name="AddtionTest"/>
         </methods>
       </class> <!-- com.apllicationTest.Applicatin_test -->
     </classes>

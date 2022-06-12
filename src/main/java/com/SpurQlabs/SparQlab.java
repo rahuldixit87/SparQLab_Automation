@@ -7,6 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 
 
 public class SparQlab  {
@@ -51,7 +52,10 @@ public void addition () {
 	        String numAns = ansewr.getText();
 	        String ans = "111111";
 		   System.out.println("addition  "+numAns);
+		   String num= ansewr.getText();
+			  
 		   
+			 Assert.assertEquals(num.trim(), "111111");
 		  
 	
           } 
@@ -85,9 +89,14 @@ public void substraction () {
 	  action.sendKeys(Keys.NUMPAD2).build().perform();
 	  action.sendKeys(Keys.NUMPAD3).build().perform();
 	
-
+       
 	   System.out.println("substraction    "+ansewr.getText());
-	  
+	   
+	   String num= ansewr.getText();
+		  
+	   
+		 Assert.assertEquals(num.trim(), "-23329646");
+	
 
     } 
     catch (Exception e )
@@ -114,6 +123,14 @@ public void division  () throws InterruptedException{
 	  action.sendKeys(Keys.NUMPAD0).build().perform();
 	  action.sendKeys(Keys.NUMPAD0).build().perform();
 	  System.out.println("division      "+ansewr.getText());
+	  
+	  
+	   System.out.println("division    "+ansewr.getText());
+	   String num= ansewr.getText();
+	  
+	   
+	 Assert.assertEquals(num.trim(), "20");
+	  
 } 
 catch (Exception e )
 {
@@ -139,6 +156,10 @@ public void multiplication (){
 		 
 		  action.sendKeys(Keys.NUMPAD5).build().perform();
 		  System.out.println(" multiplication   "+ansewr.getText());
+		  
+		  String num= ansewr.getText();
+		  Assert.assertEquals(num.trim(), "222075");
+			  
 	} 
 	catch (Exception e )
 	{
