@@ -21,7 +21,7 @@ public class Applicatin_test extends WebDriverClass {
 	@Test
 	public void substractionTest () throws InterruptedException {
 		SparQlab pages  = SparQlab.getSparQlab();
-		//LaunchBrowser();
+		
 		pages.substraction();
 		Thread.sleep(2000);
 	}

@@ -7,7 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-import org.testng.asserts.SoftAssert;
+
 
 
 public class SparQlab  {
@@ -53,8 +53,6 @@ public void addition () {
 	        String ans = "111111";
 		   System.out.println("addition  "+numAns);
 		   String num= ansewr.getText();
-			  
-		   
 			 Assert.assertEquals(num.trim(), "111111");
 		  
 	
@@ -93,8 +91,6 @@ public void substraction () {
 	   System.out.println("substraction    "+ansewr.getText());
 	   
 	   String num= ansewr.getText();
-		  
-	   
 		 Assert.assertEquals(num.trim(), "-23329646");
 	
 
@@ -126,9 +122,7 @@ public void division  () throws InterruptedException{
 	  
 	  
 	   System.out.println("division    "+ansewr.getText());
-	   String num= ansewr.getText();
-	  
-	   
+	   String num= ansewr.getText();  
 	 Assert.assertEquals(num.trim(), "20");
 	  
 } 
